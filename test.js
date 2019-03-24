@@ -15,10 +15,10 @@
                         return false;
                 }
 
-                var is_busy = true;               
+                is_busy = true;               
                 page++;
                 getData(eData,page);
-                console.log(eData);
+                //console.log(eData);
         }
 
 });
@@ -48,5 +48,5 @@
                 console.log("Something went wrong!");
         }
 });
-        return false;;
+        //return false;;
 }

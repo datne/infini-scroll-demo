@@ -44,7 +44,7 @@ $arrExistData =  json_decode($_GET['eData']);
 if (count($arrExistData) > 0) {
   foreach ($arrExistData as $obj) {
         foreach ($possibleVideos as $video) {
-             if ($video['id'] == $obj->id) {
+             if ((int)$video['id'] == (int)$obj->id) {
                   unset($possibleVideos[$video['id']]);  
           }     
   }   
